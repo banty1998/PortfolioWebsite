@@ -1,0 +1,189 @@
+{
+  "personal": {
+    "name": "Banty Agarwal",
+    "title": "Senior Software Engineer",
+    "tagline": "I build enterprise-grade systems that perform — 200% faster scripts, 20% leaner APIs, zero-compromise code.",
+    "email": "b.agarwal333@gmail.com",
+    "phone": "+91 8910675234",
+    "location": "Hyderabad, Telangana, India",
+    "linkedin": "https://linkedin.com/in/banty-agarwal",
+    "github": "https://github.com/bantyagarwal",
+    "resumeUrl": "/assets/resume/banty-agarwal-cv.pdf"
+  },
+  "about": {
+    "bio": "Senior Software Engineer with 4+ years across the full SDLC. Specialising in .NET 8, C#, ASP.NET Core, Angular, and Azure — with a proven track record in Microservices, performance optimisation, and clean architecture.",
+    "photo": "/assets/images/profile/banty-profile.webp",
+    "keyStats": [
+      { "value": "200%", "label": "Script execution improvement" },
+      { "value": "30%",  "label": "Reduction in manual workflow" },
+      { "value": "20%",  "label": "API response time improvement" },
+      { "value": "15+",  "label": "REST APIs shipped" }
+    ]
+  },
+  "skills": [
+    { "category": "Backend",                "items": [".NET 8", ".NET Core", "C#", "ASP.NET Web API", "Entity Framework Core", "LINQ", "Microservices", "RESTful APIs"] },
+    { "category": "Frontend",               "items": ["Angular 14/16", "TypeScript", "HTML5", "CSS3", "Bootstrap", "JavaScript"] },
+    { "category": "Cloud & DevOps",         "items": ["Azure App Services", "Azure Application Insights", "Azure SQL Database", "Docker", "Git"] },
+    { "category": "Database",               "items": ["MS SQL Server", "Window Functions", "Stored Procedures", "CTEs", "Views", "Complex Joins"] },
+    { "category": "Testing & Architecture", "items": ["xUnit", "Unit Testing", "Design Patterns", "OOP", "Microservices Architecture"] },
+    { "category": "Tools",                  "items": ["Kofax", "GDPicture SDK", "Postman", "Visual Studio", "VS Code", "ASP.NET Zero"] }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Coforge",
+      "role": "Senior Software Engineer",
+      "period": "Apr 2024 – Present",
+      "location": "Hyderabad, Telangana",
+      "current": true,
+      "achievements": [
+        "Refactored image processing & barcode scanning via GDPicture SDK — 200% script execution improvement over legacy.",
+        "Architected .NET 8 enterprise document processing: batch creation, document separation, PDF merging.",
+        "Delivered ASP.NET Core RESTful APIs for Kofax modules — 30% reduction in manual workflow intervention.",
+        "Mentored 3 junior devs; code review standards cut production bugs by 15%.",
+        "Optimised SQL queries, Joins and CTEs to enforce data integrity across pipelines."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "AchieveX Solution",
+      "role": "Consultant Technology",
+      "period": "Apr 2023 – Apr 2024",
+      "location": "Kolkata, West Bengal",
+      "current": false,
+      "keyProjects": ["Wauly (Digital Ad Tech)", "STEM (E-commerce)"],
+      "achievements": [
+        "Built Microservices architecture (.NET 7 + SQL Server) with 15+ REST APIs including payment gateway — supported 25% traffic increase.",
+        "Deployed STEM on Azure App Services — 15% infrastructure latency reduction.",
+        "Engineered Wauly ad-tech modules (ASP.NET Zero): device management + content display APIs.",
+        "Integrated Google Sign-In API + CORS policies for secure authentication.",
+        "Angular + Bootstrap responsive UI; 85% xUnit code coverage."
+      ]
+    },
+    {
+      "id": 3,
+      "company": "Globant",
+      "role": "Associate Software Engineer",
+      "period": "Dec 2021 – Jan 2023",
+      "location": "Pune, Maharashtra",
+      "current": false,
+      "keyProjects": ["TOD PH — Talent on Demand Pre-Hire"],
+      "achievements": [
+        "Improved API response times by 20% with optimised LINQ queries on onboarding portal.",
+        "Built Angular 14 data collection forms with secure POST API integration.",
+        "Created Stored Procedures, Views, CTEs in SQL Server for complex reporting.",
+        "Azure Application Insights logging accelerated troubleshooting by 25%.",
+        "xUnit tests covering critical candidate data validation edge cases."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "document-processing-platform",
+      "title": "Enterprise Document Processing Platform",
+      "year": 2024,
+      "company": "Coforge",
+      "tags": [".NET 8", "C#", "GDPicture SDK", "Kofax", "ASP.NET Core", "SQL Server"],
+      "previewImage": "/assets/images/projects/doc-processing-1.webp",
+      "previewImageHover": "/assets/images/projects/doc-processing-2.webp",
+      "shortDescription": "High-performance document automation with 200% speed uplift — PDF merging, barcode scanning, batch processing.",
+      "fullDescription": "Architected and delivered a full enterprise document processing solution at Coforge. Refactored image processing and barcode scanning via GDPicture SDK for a 200% performance gain. Built ASP.NET Core APIs for Kofax integration cutting manual intervention by 30%. Enforced data integrity with server-side exception handling and optimised SQL pipelines.",
+      "highlights": [
+        "200% script execution improvement",
+        "30% reduction in manual intervention",
+        "15% fewer production bugs via code review"
+      ],
+      "techStack": {
+        "backend": [".NET 8", "C#", "ASP.NET Core", "GDPicture SDK"],
+        "database": ["MS SQL Server", "CTEs", "Stored Procedures"]
+      }
+    },
+    {
+      "slug": "stem-ecommerce-platform",
+      "title": "STEM E-Commerce Platform",
+      "year": 2023,
+      "company": "AchieveX Solution",
+      "tags": [".NET 7", "Angular", "Azure", "Microservices", "SQL Server", "xUnit"],
+      "previewImage": "/assets/images/projects/stem-ecom-1.webp",
+      "previewImageHover": "/assets/images/projects/stem-ecom-2.webp",
+      "shortDescription": "Microservices e-commerce: 15+ REST APIs, payment gateway, Azure deployment, 85% test coverage.",
+      "fullDescription": "Led full-stack development of the STEM e-commerce platform. Built modular Microservices with .NET 7 — 15+ REST APIs covering cart, catalogue, and payment. Angular + Bootstrap frontend. Azure App Services deployment achieved 15% latency reduction while handling a 25% traffic surge.",
+      "highlights": [
+        "15+ REST APIs",
+        "25% traffic surge absorbed",
+        "15% latency reduction on Azure",
+        "85% xUnit coverage"
+      ],
+      "techStack": {
+        "backend": [".NET 7", "C#", "Microservices"],
+        "frontend": ["Angular", "Bootstrap"],
+        "cloud": ["Azure App Services"],
+        "database": ["MS SQL Server"],
+        "testing": ["xUnit"]
+      }
+    },
+    {
+      "slug": "tod-ph-onboarding-portal",
+      "title": "TOD PH — Pre-Hire Onboarding Portal",
+      "year": 2022,
+      "company": "Globant",
+      "tags": [".NET Core", "Angular 14", "Azure", "SQL Server", "LINQ", "xUnit"],
+      "previewImage": "/assets/images/projects/tod-ph-1.webp",
+      "previewImageHover": "/assets/images/projects/tod-ph-2.webp",
+      "shortDescription": "Enterprise HR portal — 20% faster APIs, real-time Azure monitoring, secure candidate data forms.",
+      "fullDescription": "Developed and optimised the TOD PH pre-hire portal at Globant. Improved API response by 20% via LINQ query optimisation. Built Angular 14 responsive forms for candidate data. Maintained complex SQL Server Stored Procedures and CTEs. Azure Application Insights cut troubleshooting time by 25%.",
+      "highlights": [
+        "20% API response improvement",
+        "25% faster troubleshooting",
+        "Full client + server-side validation"
+      ],
+      "techStack": {
+        "backend": [".NET Core 3.1", "C#", "LINQ"],
+        "frontend": ["Angular 14", "TypeScript"],
+        "cloud": ["Azure Application Insights", "Azure SQL Database"],
+        "database": ["SQL Server", "Stored Procedures"],
+        "testing": ["xUnit"]
+      }
+    },
+    {
+      "slug": "wauly-ad-tech",
+      "title": "Wauly — Digital Ad Tech Platform",
+      "year": 2023,
+      "company": "AchieveX Solution",
+      "tags": ["ASP.NET Zero", ".NET 7", "Angular", "REST API", "SQL Server"],
+      "previewImage": "/assets/images/projects/wauly-1.webp",
+      "previewImageHover": "/assets/images/projects/wauly-2.webp",
+      "shortDescription": "Digital advertising platform — device management, content display APIs, Google Sign-In auth.",
+      "fullDescription": "Built custom modules for Wauly using ASP.NET Zero Boilerplate. REST APIs for device management and dynamic content display. Google Sign-In + CORS for secure auth. Responsive Angular admin dashboard for campaign management.",
+      "highlights": [
+        "Device management + content display APIs",
+        "Google Sign-In + CORS auth",
+        "Responsive Angular admin UI"
+      ],
+      "techStack": {
+        "backend": [".NET 7", "ASP.NET Zero", "REST APIs"],
+        "frontend": ["Angular", "Bootstrap"],
+        "database": ["MS SQL Server"]
+      }
+    }
+  ],
+  "education": [
+    {
+      "institution": "Meghnad Saha Institute of Technology",
+      "degree": "Bachelor of Technology",
+      "major": "Information Technology",
+      "period": "2017 – 2021",
+      "location": "Kolkata, West Bengal"
+    }
+  ],
+  "certifications": [
+    { "title": "Angular – The Complete Guide",         "issuer": "Udemy",      "date": "Jan 2023", "hours": 34.5 },
+    { "title": "RESTful Web API – The Complete Guide", "issuer": "Udemy",      "date": "Jan 2023", "hours": 9   },
+    { "title": "Java (Basic) Skill Assessment",         "issuer": "HackerRank", "date": "Aug 2020"              }
+  ],
+  "marqueeItems": [
+    ".NET 8", "C#", "Angular", "TypeScript", "ASP.NET Core", "SQL Server",
+    "Azure", "Microservices", "Entity Framework", "REST APIs",
+    "xUnit", "Docker", "GDPicture SDK", "Kofax", "LINQ", "Bootstrap"
+  ]
+}

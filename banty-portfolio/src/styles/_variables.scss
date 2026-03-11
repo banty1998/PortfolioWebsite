@@ -1,0 +1,29 @@
+:root {
+  --color-bg:         #0d0d0d;
+  --color-surface:    #161616;
+  --color-surface-2:  #1e1e1e;
+  --color-text:       #f0f0f0;
+  --color-text-muted: #888;
+  --color-accent:     #c8f560;
+  --color-accent-dim: rgba(200,245,96,.12);
+  --color-border:     #2a2a2a;
+  --color-nav-bg:     rgba(13,13,13,.92);
+  --font-display: 'Barlow Condensed','Helvetica Neue',sans-serif;
+  --font-body:    'DM Sans',system-ui,sans-serif;
+  --font-mono:    'JetBrains Mono',monospace;
+  --ease-expo: cubic-bezier(0.16,1,0.3,1);
+  --t-fast: 150ms var(--ease-expo);
+  --t-mid:  400ms var(--ease-expo);
+  --t-slow: 800ms var(--ease-expo);
+  --sp-xs:.25rem; --sp-sm:.5rem;  --sp-md:1rem;
+  --sp-lg:2rem;   --sp-xl:4rem;   --sp-2xl:8rem;
+}
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$container-max: 1300px;
+@mixin bp($b) {
+  @if $b==sm { @media(max-width:#{$bp-sm}){@content;} }
+  @if $b==md { @media(max-width:#{$bp-md}){@content;} }
+  @if $b==lg { @media(max-width:#{$bp-lg}){@content;} }
+}

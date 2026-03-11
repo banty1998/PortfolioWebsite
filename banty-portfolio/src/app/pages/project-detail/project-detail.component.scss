@@ -1,0 +1,13 @@
+.pd__hero   { position:relative; height:60vh; overflow:hidden; }
+.pd__img    { width:100%; height:100%; object-fit:cover; filter:brightness(.45); }
+.pd__ov     { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:var(--sp-xl); }
+.pd__back   { display:inline-block; margin-bottom:var(--sp-lg); transition:color var(--t-fast); }
+.pd__back:hover { color:var(--color-accent); }
+.pd__body   { display:grid; grid-template-columns:280px 1fr; gap:var(--sp-2xl); padding:var(--sp-2xl) 0; }
+@media(max-width:768px) { .pd__body { grid-template-columns:1fr; } }
+.pd__mi     { margin-bottom:var(--sp-lg); }
+.pd__mi .t-label { margin-bottom:.25rem; display:block; }
+.pd__tags   { display:flex; flex-wrap:wrap; gap:var(--sp-xs); margin-top:.5rem; }
+.pd__lead   { font-size:1.05rem; margin-bottom:var(--sp-xl); }
+.pd__sh     { margin:var(--sp-xl) 0 var(--sp-md); color:var(--color-accent); }
+.pd__hl li  { padding:var(--sp-xs) 0; font-size:.95rem; }

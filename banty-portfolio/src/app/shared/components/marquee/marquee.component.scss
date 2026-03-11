@@ -1,0 +1,5 @@
+.mq { overflow:hidden; border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border); padding:var(--sp-md) 0; }
+.mq__track { display:flex; width:max-content; animation:marquee var(--spd,32s) linear infinite; }
+.mq__item  { font-family:var(--font-display); font-size:clamp(1rem,2vw,1.3rem); font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:var(--color-text-muted); white-space:nowrap; padding:0 var(--sp-md); transition:color var(--t-fast); }
+.mq__item:hover { color:var(--color-accent); }
+.mq__sep   { color:var(--color-accent); margin:0 .4rem; }

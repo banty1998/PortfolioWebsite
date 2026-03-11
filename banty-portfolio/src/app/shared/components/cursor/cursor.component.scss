@@ -1,0 +1,5 @@
+.c-dot, .c-ring { position:fixed; pointer-events:none; z-index:9999; border-radius:50%; transform:translate(-50%,-50%); }
+@media(hover:none) { .c-dot, .c-ring { display:none; } }
+.c-dot  { width:8px; height:8px; background:var(--color-accent); }
+.c-ring { width:32px; height:32px; border:1.5px solid rgba(200,245,96,.5); transition:width 300ms var(--ease-expo),height 300ms var(--ease-expo),border-color 300ms; }
+.c-ring--hover { width:52px; height:52px; border-color:var(--color-accent); }
