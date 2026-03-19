@@ -14,10 +14,17 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
         <p class="t-label" revealOnScroll>Selected Work</p>
         <h2 class="t-h1 wk__title" revealOnScroll>Projects<br>that <span class="accent">ship.</span></h2>
         <div class="wk__grid" revealOnScroll>
-          <app-project-card *ngFor="let p of d()?.projects" [project]="p"/>
+          <app-project-card
+            *ngFor="let p of d()?.projects; let i = index"
+            [project]="p"
+            [index]="i"/>
         </div>
       </div>
     </section>`,
-  styles: [`.wk__title{margin:var(--sp-lg) 0 var(--sp-xl)}.wk__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-lg)}@media(max-width:768px){.wk__grid{grid-template-columns:1fr}}`]
+  styles: [`
+    .wk__title { margin:var(--sp-lg) 0 var(--sp-xl); }
+    .wk__grid  { display:grid; grid-template-columns:repeat(2,1fr); gap:var(--sp-lg); }
+    @media(max-width:768px) { .wk__grid { grid-template-columns:1fr; gap:var(--sp-md); } }
+  `]
 })
 export class WorkComponent { d = inject(PortfolioDataService).data; }

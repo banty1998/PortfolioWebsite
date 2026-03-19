@@ -12,10 +12,12 @@ import { Component } from '@angular/core';
         </div>
         <div class="ft__links">
           <a href="mailto:b.agarwal333@gmail.com" class="hover-fill">b.agarwal333@gmail.com</a>
-          <a href="https://www.linkedin.com/in/banty-agarwal-730720190"
-             target="_blank" rel="noopener" aria-label="LinkedIn profile" class="hover-fill">LinkedIn ↗</a>
+          <a href="https://www.linkedin.com/in/banty-agarwal-a58850198"
+             target="_blank" rel="noopener"
+             aria-label="LinkedIn profile" class="hover-fill">LinkedIn ↗</a>
           <a href="https://github.com/banty1998"
-             target="_blank" rel="noopener" aria-label="GitHub profile" class="hover-fill">GitHub ↗</a>
+             target="_blank" rel="noopener"
+             aria-label="GitHub profile" class="hover-fill">GitHub ↗</a>
         </div>
         <p class="t-label">© {{year}} · Built with Angular</p>
       </div>

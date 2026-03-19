@@ -9,11 +9,15 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
     <section class="ct section" id="contact">
       <div class="container">
         <p class="t-label" revealOnScroll>Get in touch</p>
-        <h2 class="t-hero ct__head" revealOnScroll>Let's work<br><span class="accent">together.</span></h2>
+        <h2 class="t-hero ct__head" revealOnScroll>
+          Let's work<br><span class="accent">together.</span>
+        </h2>
         <div class="ct__links" revealOnScroll>
-          <a href="mailto:b.agarwal333@gmail.com" class="ct__email hover-fill">b.agarwal333@gmail.com</a>
+          <a href="mailto:b.agarwal333@gmail.com" class="ct__email hover-fill">
+            b.agarwal333@gmail.com
+          </a>
           <div class="ct__social">
-            <a href="https://www.linkedin.com/in/banty-agarwal-730720190"
+            <a href="https://www.linkedin.com/in/banty-agarwal-a58850198"
                target="_blank" rel="noopener"
                class="hover-fill t-label" aria-label="LinkedIn profile (opens in new tab)">LinkedIn ↗</a>
             <a href="https://github.com/banty1998"
@@ -27,9 +31,15 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
   styles: [`
     .ct        { background:var(--color-surface); }
     .ct__head  { margin:var(--sp-lg) 0 var(--sp-xl); }
-    .ct__email { font-family:var(--font-display); font-size:clamp(1.2rem,3vw,2.5rem); font-weight:700; display:block; margin-bottom:var(--sp-lg); }
-    .ct__social{ display:flex; gap:var(--sp-xl); margin-bottom:var(--sp-lg); flex-wrap:wrap; }
-    .ct__loc   { margin-top:var(--sp-md); }
+    .ct__email {
+      font-family:var(--font-display);
+      font-size:clamp(1.2rem,3vw,2.5rem);
+      font-weight:700;
+      display:block;
+      margin-bottom:var(--sp-lg);
+    }
+    .ct__social { display:flex; gap:var(--sp-xl); margin-bottom:var(--sp-lg); flex-wrap:wrap; }
+    .ct__loc    { margin-top:var(--sp-md); }
   `]
 })
 export class ContactComponent {}
