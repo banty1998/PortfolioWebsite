@@ -6,7 +6,7 @@
     "email": "b.agarwal333@gmail.com",
     "phone": "+91 8910675234",
     "location": "Hyderabad, Telangana, India",
-    "linkedin": "https://www.linkedin.com/in/banty-agarwal-730720190",
+    "linkedin": "https://www.linkedin.com/in/banty-agarwal-a58850198",
     "github": "https://github.com/banty1998",
     "resumeUrl": ""
   },
@@ -168,8 +168,6 @@
         "ASP.NET Core",
         "SQL Server"
       ],
-      "previewImage": "assets/images/projects/doc-processing-1.webp",
-      "previewImageHover": "assets/images/projects/doc-processing-2.webp",
       "shortDescription": "High-performance document automation with 200% speed uplift — PDF merging, barcode scanning, batch processing.",
       "fullDescription": "Architected and delivered a full enterprise document processing solution at Coforge. Refactored image processing and barcode scanning via GDPicture SDK for a 200% performance gain. Built ASP.NET Core APIs for Kofax integration cutting manual intervention by 30%. Enforced data integrity with server-side exception handling and optimised SQL pipelines.",
       "highlights": [
@@ -204,8 +202,6 @@
         "SQL Server",
         "xUnit"
       ],
-      "previewImage": "assets/images/projects/stem-ecom-1.webp",
-      "previewImageHover": "assets/images/projects/stem-ecom-2.webp",
       "shortDescription": "Microservices e-commerce: 15+ REST APIs, payment gateway, Azure deployment, 85% test coverage.",
       "fullDescription": "Led full-stack development of the STEM e-commerce platform. Built modular Microservices with .NET 7 — 15+ REST APIs covering cart, catalogue, and payment. Angular + Bootstrap frontend. Azure App Services deployment achieved 15% latency reduction while handling a 25% traffic surge.",
       "highlights": [
@@ -248,8 +244,6 @@
         "LINQ",
         "xUnit"
       ],
-      "previewImage": "assets/images/projects/tod-ph-1.webp",
-      "previewImageHover": "assets/images/projects/tod-ph-2.webp",
       "shortDescription": "Enterprise HR portal — 20% faster APIs, real-time Azure monitoring, secure candidate data forms.",
       "fullDescription": "Developed and optimised the TOD PH pre-hire portal at Globant. Improved API response by 20% via LINQ query optimisation. Built Angular 14 responsive forms for candidate data. Maintained complex SQL Server Stored Procedures and CTEs. Azure Application Insights cut troubleshooting time by 25%.",
       "highlights": [
@@ -292,8 +286,6 @@
         "REST API",
         "SQL Server"
       ],
-      "previewImage": "assets/images/projects/wauly-1.webp",
-      "previewImageHover": "assets/images/projects/wauly-2.webp",
       "shortDescription": "Digital advertising platform — device management, content display APIs, Google Sign-In auth.",
       "fullDescription": "Built custom modules for Wauly using ASP.NET Zero Boilerplate. REST APIs for device management and dynamic content display. Google Sign-In + CORS for secure auth. Responsive Angular admin dashboard for campaign management.",
       "highlights": [
