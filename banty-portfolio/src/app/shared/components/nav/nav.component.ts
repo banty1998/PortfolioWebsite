@@ -6,13 +6,13 @@ import { CommonModule, DOCUMENT } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <header class="nav" [class.nav--scrolled]="scrolled()">
+    <header class="nav" [class.nav--scrolled]="scrolled()" [class.nav--open]="menuOpen()">
       <div class="nav__inner container">
         <a [href]="base" class="nav__logo">
           <span class="nav__name">Banty Agarwal</span>
           <span class="t-label nav__sub">Senior Software Engineer</span>
         </a>
-        <nav class="nav__links" [class.nav--open]="menuOpen()">
+        <nav class="nav__links">
           <a [href]="base + '#work'"       class="nav__link hover-fill" (click)="close()">Work</a>
           <a [href]="base + '#about'"      class="nav__link hover-fill" (click)="close()">About</a>
           <a [href]="base + '#experience'" class="nav__link hover-fill" (click)="close()">Experience</a>
