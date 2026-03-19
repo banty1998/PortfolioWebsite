@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
+  imports: [],
   template: `
     <section class="hero" id="hero">
       <div class="hero__bg"></div>
       <div class="container hero__content page-enter">
-        <p class="t-label hero__eye">Available for opportunities</p>
+        <p class="t-label hero__eye">Available for opportunities · Hyderabad, India</p>
         <h1 class="t-hero">Banty<br><span class="accent">Agarwal</span></h1>
         <p class="t-h2 hero__sub">Senior Software Engineer</p>
         <p class="t-body hero__tag">
@@ -15,8 +17,8 @@ import { Component } from '@angular/core';
           4+ years building enterprise systems that perform.
         </p>
         <div class="hero__btns">
-          <a href="#work" class="btn btn--primary">View Work</a>
-          <a href="/assets/resume/banty-agarwal-cv.pdf" download class="btn btn--ghost">Download CV</a>
+          <a [href]="base + '#work'" class="btn btn--primary">View Work</a>
+          <a href="mailto:b.agarwal333@gmail.com" class="btn btn--ghost">Get in Touch</a>
         </div>
       </div>
       <div class="hero__hint">
@@ -26,4 +28,6 @@ import { Component } from '@angular/core';
     </section>`,
   styleUrls: ['./hero.component.scss']
 })
-export class HeroComponent {}
+export class HeroComponent {
+  base = inject(DOCUMENT).baseURI;
+}

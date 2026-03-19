@@ -13,13 +13,23 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
         <div class="ct__links" revealOnScroll>
           <a href="mailto:b.agarwal333@gmail.com" class="ct__email hover-fill">b.agarwal333@gmail.com</a>
           <div class="ct__social">
-            <a href="https://linkedin.com/in/banty-agarwal" target="_blank" rel="noopener" class="hover-fill t-label">LinkedIn ↗</a>
-            <a href="https://github.com/bantyagarwal"       target="_blank" rel="noopener" class="hover-fill t-label">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/banty-agarwal-730720190"
+               target="_blank" rel="noopener"
+               class="hover-fill t-label" aria-label="LinkedIn profile (opens in new tab)">LinkedIn ↗</a>
+            <a href="https://github.com/banty1998"
+               target="_blank" rel="noopener"
+               class="hover-fill t-label" aria-label="GitHub profile (opens in new tab)">GitHub ↗</a>
           </div>
-          <p class="t-label ct__loc">Hyderabad, Telangana, India</p>
+          <p class="t-label ct__loc">📍 Hyderabad, Telangana, India · Open to remote</p>
         </div>
       </div>
     </section>`,
-  styles: [`.ct{background:var(--color-surface)}.ct__head{margin:var(--sp-lg) 0 var(--sp-xl)}.ct__email{font-family:var(--font-display);font-size:clamp(1.2rem,3vw,2.5rem);font-weight:700;display:block;margin-bottom:var(--sp-lg)}.ct__social{display:flex;gap:var(--sp-xl);margin-bottom:var(--sp-lg)}.ct__loc{margin-top:var(--sp-md)}`]
+  styles: [`
+    .ct        { background:var(--color-surface); }
+    .ct__head  { margin:var(--sp-lg) 0 var(--sp-xl); }
+    .ct__email { font-family:var(--font-display); font-size:clamp(1.2rem,3vw,2.5rem); font-weight:700; display:block; margin-bottom:var(--sp-lg); }
+    .ct__social{ display:flex; gap:var(--sp-xl); margin-bottom:var(--sp-lg); flex-wrap:wrap; }
+    .ct__loc   { margin-top:var(--sp-md); }
+  `]
 })
 export class ContactComponent {}

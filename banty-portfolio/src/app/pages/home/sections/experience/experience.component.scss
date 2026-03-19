@@ -9,3 +9,13 @@
 .ex__proj   { margin-top:.25rem; color:var(--color-accent); }
 .ex__ach    { padding-left:var(--sp-md); border-left:2px solid var(--color-border); }
 .ex__ach li { padding:var(--sp-xs) 0; font-size:.9rem; }
+
+@media(max-width:768px) {
+  .ex__item { grid-template-columns:2rem 1fr; gap:var(--sp-md); padding:var(--sp-lg) 0; }
+  .ex__num  { font-size:.9rem; }
+  .ex__hd   { flex-direction:column; gap:var(--sp-xs); }
+}
+@media(max-width:480px) {
+  .ex__item { grid-template-columns:1fr; }
+  .ex__num  { display:none; }
+}

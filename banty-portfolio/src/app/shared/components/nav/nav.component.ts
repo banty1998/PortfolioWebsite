@@ -1,5 +1,5 @@
-import { Component, HostListener, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener, signal, inject } from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
@@ -8,21 +8,29 @@ import { CommonModule } from '@angular/common';
   template: `
     <header class="nav" [class.nav--scrolled]="scrolled()">
       <div class="nav__inner container">
-        <a href="/" class="nav__logo">
+        <a [href]="base" class="nav__logo">
           <span class="nav__name">Banty Agarwal</span>
           <span class="t-label nav__sub">Senior Software Engineer</span>
         </a>
-        <nav class="nav__links">
-          <a href="#work"       class="nav__link hover-fill">Work</a>
-          <a href="#about"      class="nav__link hover-fill">About</a>
-          <a href="#experience" class="nav__link hover-fill">Experience</a>
-          <a href="#contact"    class="nav__cta">Hire Me</a>
+        <nav class="nav__links" [class.nav--open]="menuOpen()">
+          <a [href]="base + '#work'"       class="nav__link hover-fill" (click)="close()">Work</a>
+          <a [href]="base + '#about'"      class="nav__link hover-fill" (click)="close()">About</a>
+          <a [href]="base + '#experience'" class="nav__link hover-fill" (click)="close()">Experience</a>
+          <a [href]="base + '#contact'"    class="nav__cta"             (click)="close()">Hire Me</a>
         </nav>
+        <button class="nav__burger" (click)="toggle()"
+                [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>`,
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
+  base     = inject(DOCUMENT).baseURI;
   scrolled = signal(false);
+  menuOpen = signal(false);
+  toggle() { this.menuOpen.update(v => !v); }
+  close()  { this.menuOpen.set(false); }
   @HostListener('window:scroll') onScroll() { this.scrolled.set(window.scrollY > 80); }
 }

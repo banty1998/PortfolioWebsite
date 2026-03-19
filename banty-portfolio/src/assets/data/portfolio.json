@@ -8,11 +8,11 @@
     "location": "Hyderabad, Telangana, India",
     "linkedin": "https://linkedin.com/in/banty-agarwal",
     "github": "https://github.com/bantyagarwal",
-    "resumeUrl": "/assets/resume/banty-agarwal-cv.pdf"
+    "resumeUrl": "assets/resume/banty-agarwal-cv.pdf"
   },
   "about": {
     "bio": "Senior Software Engineer with 4+ years across the full SDLC. Specialising in .NET 8, C#, ASP.NET Core, Angular, and Azure — with a proven track record in Microservices, performance optimisation, and clean architecture.",
-    "photo": "/assets/images/profile/banty-profile.webp",
+    "photo": "assets/images/profile/banty-profile.webp",
     "keyStats": [
       { "value": "200%", "label": "Script execution improvement" },
       { "value": "30%",  "label": "Reduction in manual workflow" },
@@ -84,8 +84,8 @@
       "year": 2024,
       "company": "Coforge",
       "tags": [".NET 8", "C#", "GDPicture SDK", "Kofax", "ASP.NET Core", "SQL Server"],
-      "previewImage": "/assets/images/projects/doc-processing-1.webp",
-      "previewImageHover": "/assets/images/projects/doc-processing-2.webp",
+      "previewImage": "assets/images/projects/doc-processing-1.webp",
+      "previewImageHover": "assets/images/projects/doc-processing-2.webp",
       "shortDescription": "High-performance document automation with 200% speed uplift — PDF merging, barcode scanning, batch processing.",
       "fullDescription": "Architected and delivered a full enterprise document processing solution at Coforge. Refactored image processing and barcode scanning via GDPicture SDK for a 200% performance gain. Built ASP.NET Core APIs for Kofax integration cutting manual intervention by 30%. Enforced data integrity with server-side exception handling and optimised SQL pipelines.",
       "highlights": [
@@ -104,8 +104,8 @@
       "year": 2023,
       "company": "AchieveX Solution",
       "tags": [".NET 7", "Angular", "Azure", "Microservices", "SQL Server", "xUnit"],
-      "previewImage": "/assets/images/projects/stem-ecom-1.webp",
-      "previewImageHover": "/assets/images/projects/stem-ecom-2.webp",
+      "previewImage": "assets/images/projects/stem-ecom-1.webp",
+      "previewImageHover": "assets/images/projects/stem-ecom-2.webp",
       "shortDescription": "Microservices e-commerce: 15+ REST APIs, payment gateway, Azure deployment, 85% test coverage.",
       "fullDescription": "Led full-stack development of the STEM e-commerce platform. Built modular Microservices with .NET 7 — 15+ REST APIs covering cart, catalogue, and payment. Angular + Bootstrap frontend. Azure App Services deployment achieved 15% latency reduction while handling a 25% traffic surge.",
       "highlights": [
@@ -128,8 +128,8 @@
       "year": 2022,
       "company": "Globant",
       "tags": [".NET Core", "Angular 14", "Azure", "SQL Server", "LINQ", "xUnit"],
-      "previewImage": "/assets/images/projects/tod-ph-1.webp",
-      "previewImageHover": "/assets/images/projects/tod-ph-2.webp",
+      "previewImage": "assets/images/projects/tod-ph-1.webp",
+      "previewImageHover": "assets/images/projects/tod-ph-2.webp",
       "shortDescription": "Enterprise HR portal — 20% faster APIs, real-time Azure monitoring, secure candidate data forms.",
       "fullDescription": "Developed and optimised the TOD PH pre-hire portal at Globant. Improved API response by 20% via LINQ query optimisation. Built Angular 14 responsive forms for candidate data. Maintained complex SQL Server Stored Procedures and CTEs. Azure Application Insights cut troubleshooting time by 25%.",
       "highlights": [
@@ -151,8 +151,8 @@
       "year": 2023,
       "company": "AchieveX Solution",
       "tags": ["ASP.NET Zero", ".NET 7", "Angular", "REST API", "SQL Server"],
-      "previewImage": "/assets/images/projects/wauly-1.webp",
-      "previewImageHover": "/assets/images/projects/wauly-2.webp",
+      "previewImage": "assets/images/projects/wauly-1.webp",
+      "previewImageHover": "assets/images/projects/wauly-2.webp",
       "shortDescription": "Digital advertising platform — device management, content display APIs, Google Sign-In auth.",
       "fullDescription": "Built custom modules for Wauly using ASP.NET Zero Boilerplate. REST APIs for device management and dynamic content display. Google Sign-In + CORS for secure auth. Responsive Angular admin dashboard for campaign management.",
       "highlights": [

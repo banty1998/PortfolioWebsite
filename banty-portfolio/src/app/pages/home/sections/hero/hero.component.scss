@@ -8,3 +8,8 @@
 .hero__hint { position:absolute; bottom:var(--sp-xl); left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:var(--sp-sm); }
 .hero__line { width:1px; height:48px; background:linear-gradient(to bottom,var(--color-accent),transparent); animation:pulse 2s ease-in-out infinite; }
 @keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:1} }
+@media(max-width:480px) {
+  .hero__content { padding-top:5rem; }
+  .hero__btns    { flex-direction:column; gap:var(--sp-sm); }
+  .hero__btns .btn { text-align:center; width:100%; max-width:280px; }
+}

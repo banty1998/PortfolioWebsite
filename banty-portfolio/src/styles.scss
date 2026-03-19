@@ -27,3 +27,8 @@
 @media(max-width:768px) { .nav__link { display:none; } }
 @media(max-width:480px) { .hero__btns { flex-direction:column; } .btn { text-align:center; } }
 @media(max-width:600px) { .ft__inner { flex-direction:column; text-align:center; } .ft__links { flex-direction:column; gap:var(--sp-md); align-items:center; } }
+
+/* ── Additional responsive ───────────────────────────────── */
+@media(max-width:860px) { .sk__grid { grid-template-columns:repeat(2,1fr) !important; } }
+@media(max-width:480px) { .sk__grid { grid-template-columns:1fr !important; } }
+@media(max-width:768px) { .wk__grid { gap:var(--sp-md) !important; } }
