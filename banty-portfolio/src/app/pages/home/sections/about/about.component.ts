@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf, DOCUMENT } from '@angular/common';
 import { PortfolioDataService }    from '../../../../core/services/portfolio-data.service';
 import { MarqueeComponent }        from '../../../../shared/components/marquee/marquee.component';
 import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-scroll.directive';
@@ -7,7 +7,7 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NgFor, MarqueeComponent, RevealOnScrollDirective],
+  imports: [NgFor, NgIf, MarqueeComponent, RevealOnScrollDirective],
   template: `
     <section class="about section" id="about">
       <div class="container about__grid" revealOnScroll>
@@ -23,8 +23,17 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
           </div>
         </div>
         <div class="about__right">
-          <div class="about__photo">
-            <span class="about__init">BA</span>
+          <div class="about__photo-wrap">
+            <img
+              *ngIf="d()?.about?.photo"
+              [src]="base + d()!.about!.photo"
+              alt="Banty Agarwal — profile photo"
+              class="about__photo-img"
+              width="750" height="1000"
+              loading="lazy"/>
+            <div *ngIf="!d()?.about?.photo" class="about__photo-placeholder">
+              <span class="about__init">BA</span>
+            </div>
           </div>
         </div>
       </div>
@@ -32,4 +41,7 @@ import { RevealOnScrollDirective } from '../../../../core/directives/reveal-on-s
     <app-marquee [items]="d()?.marqueeItems || []" [speed]="30"/>`,
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent { d = inject(PortfolioDataService).data; }
+export class AboutComponent {
+  d    = inject(PortfolioDataService).data;
+  base = inject(DOCUMENT).baseURI;
+}
